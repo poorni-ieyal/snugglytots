@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+    --primaryColor: #641C46;
+}
+
+@font-face {
+    font-family: 'font-bold';
+    src: url(./assets/fonts/HelveticaNeueBold.otf);
+}
+
+@font-face {
+    font-family: 'font-medium';
+    src: url(./assets/fonts/HelveticaNeueMedium.otf);
+}
+
+@font-face {
+    font-family: 'font-light';
+    src: url(./assets/fonts/HelveticaNeueLight.otf);
+}
