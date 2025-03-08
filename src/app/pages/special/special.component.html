@@ -1,0 +1,22 @@
+<div class="special">
+    <div class="container main">
+        <h4>What Makes SnugglyTots Special?
+        </h4>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="content" *ngFor="let special of specials">
+                    <div class="icon-img">
+                        <img class="icon" [src]="special.icon" [alt]="special.alt">
+                    </div>
+                    <div class="img-content">
+                        <h5>{{special.heading}} </h5>
+                        <h6>{{special.subheading}} </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 image">
+                <img src="../../../assets/images/snuggly-tots-special.jpg" alt="snuggly-tots-special">
+            </div>
+
+        </div>
+    </div>

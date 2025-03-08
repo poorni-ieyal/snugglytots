@@ -1,0 +1,16 @@
+<div class="testimonial_main container" id="testimonials">
+    <h4>Testimonials</h4>
+    <h5> Join hundreds of parents eager for the launch!</h5>
+    <div class="container">
+        <div class="row testimonial_row">
+            <div class="col-lg-6 testimonial_col" *ngFor="let testimonial of testimonials">
+                <div class="card1">
+                    <img class="testimonial_img" [src]="testimonial.mainImg" [alt]="testimonial.name">
+                    <img [src]="testimonial.ratingImg" alt="rating">
+                    <p><span class="quote">“</span> {{testimonial.text}} <span class="quote">“</span></p>
+                </div>
+                <h6 class="name">{{testimonial.name}} </h6>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,86 @@
+.count-down-timer {
+  text-align: center;
+  background: radial-gradient(circle, #1a1a1a, #000000);
+  margin: 30px auto;
+  color: #ffcc00;
+  border-radius: 10px;
+  padding: 24px;
+  font-family: "Orbitron", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.countdown-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #faafb5;
+  font-family: var(--font_bold);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  color: #faafb5;
+}
+.description,
+.times {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.description p {
+  font-size: 14px;
+  margin: 5px;
+  font-family: var(--font_regular);
+}
+.flip-card {
+  width: 60px;
+  height: 80px;
+  background: #222;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: var(--font_bold);
+  position: relative;
+  overflow: hidden;
+}
+.flip-card:last-child {
+  animation: flip 1s ease-in-out infinite;
+}
+@keyframes flip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+.image img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+  .count-down-timer {
+    flex-direction: column;
+  }
+  .description,
+  .times {
+    width: auto;
+    justify-content: center;
+    gap: 5px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .image {
+    display: none;
+  }
+}

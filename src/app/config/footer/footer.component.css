@@ -1,0 +1,124 @@
+.footer {
+  background: var(--header-bg);
+  opacity: 1;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.inner-footer {
+  justify-content: center;
+  padding: 70px 0px 0px;
+  margin: 0px 24px;
+}
+
+.inner-footer img {
+  width: 35%;
+  height: auto;
+}
+
+.inner-footer p {
+  font-size: 18px !important;
+  font-family: var(--font_regular) !important;
+  line-height: 30px !important;
+  text-align: center !important;
+  margin-top: 20px !important;
+}
+
+.detail {
+  font-size: 16px !important;
+  font-family: var(--font-bold) !important;
+  line-height: 19px !important;
+  color: var(--button-black-color) !important;
+}
+
+.social-details a {
+  text-decoration: none;
+  color: var(--button-black-color);
+}
+
+.social-details h6 {
+  font-size: 24px;
+  font-family: var(--font_medium);
+  line-height: 29px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.address_p {
+  font-family: var(--font-medium);
+  font-size: 20px;
+  text-align: center;
+}
+
+.list {
+  font-size: 30px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.footer-line {
+  width: 100%;
+  margin-top: 28px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.copyright {
+  text-align: center !important;
+  font-size: 20px !important;
+  font-family: var(--font-medium) !important;
+  line-height: 24px !important;
+}
+
+/* Responsive for 993 - 1280 size */
+
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+  .inner-footer {
+    padding-top: 70px !important;
+  }
+  .social-details h6 {
+    font-size: 20px !important;
+  }
+  .list {
+    font-size: 22px !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .inner-footer {
+    padding: 70px 0px 0px !important;
+  }
+  .social-details h6 {
+    font-size: 20px !important;
+  }
+  .copyright {
+    font-size: 16px !important;
+  }
+  .inner-footer img {
+    width: 90%;
+  }
+}
+
+/* @media screen and (max-width: 991px) {
+    .footer {
+      margin-top: 215px;
+    }
+  } */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .inner-footer {
+    padding: 70px 0px 0px !important;
+  }
+  .social-details h6 {
+    font-size: 16px !important;
+  }
+  .list {
+    font-size: 20px;
+  }
+  address_p {
+    font-size: 16px;
+  }
+}
