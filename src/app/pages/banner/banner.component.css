@@ -1,14 +1,29 @@
 /* Enhanced Banner Styling with Animations */
 .banner {
   padding: 90px 0px;
-  background-image: url(../../../assets/images/banner/banner-background.jpg);
-  background-repeat: no-repeat;
-  display: flex;
+  background-image: url(../../../assets/images/snuggly-tots-bg.jpg);
+  /* display: flex;
   justify-content: flex-end;
   align-items: center;
   position: relative;
   overflow: hidden;
   animation: fadeIn 1.5s ease-in-out;
+  width: 100%; */
+  /* height: auto; */
+  background-size: contain;
+  background-repeat: no-repeat !important;
+  background-position: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  color: #f1a09d;
+  font-size: 50px;
 }
 
 @keyframes fadeIn {
@@ -25,10 +40,17 @@
 .heading {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 12px;
   padding: 0 20px;
-  text-align: left;
+  text-align: center;
   animation: slideIn 1.5s ease-in-out;
+  /* position: absolute; */
+  /* right: 10%; */
+}
+
+.banner-img {
+  width: 100%;
+  margin-top: 30px;
 }
 
 @keyframes slideIn {
@@ -45,24 +67,30 @@
 .heading h1 {
   opacity: 0;
   animation: fadeInText 1.8s ease-in-out forwards;
-  font-size: 30px;
-  font-family: var(--font_bold);
   letter-spacing: 0.88px;
   line-height: 40px;
-  color: var(--white);
+  color: var(--primaryColor);
+  font-family: var(--font_acute);
+  font-weight: 800;
+  font-size: 36px;
 }
 
 .heading h3 {
-  font-size: 16px;
-  font-family: var(--font_semibold);
+  font-size: 50px;
+  font-family: var(--font_chaloops);
   letter-spacing: 0.88px;
   line-height: 30px;
-  color: var(--white);
+  color: #6ea29f;
   opacity: 0;
   animation: fadeInText 1.8s ease-in-out forwards;
 }
 
 .heading h2 {
+  font-family: var(--font_acute);
+  font-size: 32px;
+}
+
+/* .heading h2 {
   opacity: 0;
   animation: fadeInText 1.8s ease-in-out forwards;
   color: var(--white);
@@ -70,7 +98,7 @@
   font-size: 16px;
   font-family: var(--font_semibold);
   line-height: 35px;
-}
+} */
 
 @keyframes fadeInText {
   from {
@@ -121,8 +149,15 @@
   animation: pulse 2s infinite;
 }
 
-/* Responsive Adjustments */
 @media screen and (max-width: 575px) {
+  .overlay {
+    position: absolute;
+    background: rgb(0 0 0 / 70%);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+  }
   .banner-heading h1 {
     font-size: 24px !important;
     line-height: 35px !important;
@@ -130,15 +165,45 @@
   }
   .banner {
     padding: 100px 12px 80px 12px !important;
-    height: 100vh !important;
     background-size: cover;
+    background-position: -100px 0px;
   }
 }
 
-@media screen and (max-width: 991px) {
-  .heading h1,
-  .heading h3,
+.banner {
+  margin-top: -8px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .heading {
+    text-align: center !important;
+  }
+  .banner {
+    background-size: cover;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
   .heading h2 {
-    color: var(--primaryColor);
+    font-size: 28px;
+  }
+  .banner-img {
+    margin-bottom: 20px;
+  }
+  .heading h3 {
+    font-size: 39px !important;
+  }
+  span {
+    font-size: 39px;
+  }
+  .heading h1 {
+    font-size: 30px;
+  }
+  .heading {
+    gap: 6px;
+  }
+  .mobile-header {
+    justify-content: center !important;
   }
 }

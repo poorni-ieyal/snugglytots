@@ -63,12 +63,12 @@ export class CollectionsComponent {
   };
 
   meetups: Array<string> = [
-    '../../../assets/images/collection1.jpg',
-    '../../../assets/images/collection2.png',
-    '../../../assets/images/collection3.png',
-    '../../../assets/images/collection4.png',
-    '../../../assets/images/collection5.png',
-    '../../../assets/images/collection6.png',
-    '../../../assets/images/collection7.png',
+    '../../../assets/images/collection8.png',
+    '../../../assets/images/collection9.png',
+    '../../../assets/images/collection10.png',
+    // '../../../assets/images/collection4.png',
+    // '../../../assets/images/collection5.png',
+    // '../../../assets/images/collection6.png',
+    // '../../../assets/images/collection7.png',
   ];
 }

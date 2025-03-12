@@ -10,6 +10,8 @@
   --font_semibold: "Montserrat-Semibold";
   --font_regular: "Montserrat-Regular";
   --font_medium: "Montserrat-Medium";
+  --font_acute: "Acute";
+  --font_chaloops: "Chaloops";
 }
 
 @font-face {
@@ -30,10 +32,22 @@
   font-family: "Montserrat-Regular";
   src: url(./assets/fonts/Montserrat-Regular.ttf);
 }
+@font-face {
+  font-family: "Acute";
+  src: url(./assets/fonts/fonnts.com-Acuta-Light.otf);
+}
+@font-face {
+  font-family: "Chaloops";
+  src: url(./assets/fonts/Chaloops-Bold.ttf);
+}
 
 html,
 body {
   scroll-behavior: auto;
+}
+
+body {
+  background: var(--header-bg) !important;
 }
 
 .banner-demo-button {

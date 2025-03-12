@@ -1,19 +1,53 @@
 .count-down-timer {
   text-align: center;
-  background: radial-gradient(circle, #1a1a1a, #000000);
-  margin: 30px auto;
+  /* background: radial-gradient(circle, #1a1a1a, #000000); */
+  background: var(--accentColor);
+  /* margin: 30px auto; */
   color: #ffcc00;
   border-radius: 10px;
   padding: 24px;
   font-family: "Orbitron", sans-serif;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  justify-content: center;
 }
+
+.lists {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.list {
+  font-size: 30px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  color: #70a29d !important;
+}
+
+.count-down-timer h6 {
+  /* margin-top: 30px; */
+  margin-bottom: 0;
+  font-family: var(--font_bold);
+  color: #70a29d;
+  font-size: 20px;
+}
+
+.list a {
+  font-size: 30px !important;
+  color: #70a29d;
+}
+
 .countdown-title {
   font-size: 30px;
   margin-bottom: 10px;
-  color: #faafb5;
+  /* color: #faafb5; */
+  color: #70a29d;
   font-family: var(--font_bold);
 }
 .wrapper {
@@ -32,12 +66,13 @@
 .description p {
   font-size: 14px;
   margin: 5px;
-  font-family: var(--font_regular);
+  font-family: var(--font_medium);
+  color: #70a29d;
 }
 .flip-card {
   width: 60px;
   height: 80px;
-  background: #222;
+  background: #70a29d;
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -46,6 +81,7 @@
   font-family: var(--font_bold);
   position: relative;
   overflow: hidden;
+  color: #ffcccc;
 }
 .flip-card:last-child {
   animation: flip 1s ease-in-out infinite;
@@ -79,8 +115,22 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .image {
-    display: none;
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+  .list {
+    font-size: 22px !important;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .list {
+    font-size: 20px;
+  }
+}
+
+/* @media only screen and (max-width: 767px) {
+  .image img {
+    object-fit: cover;
+    height: 300px;
+    object-position: 90%;
+  }
+} */

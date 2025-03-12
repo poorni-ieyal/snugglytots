@@ -17,7 +17,8 @@
 
 .head-section {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
   align-items: center;
 }
 
@@ -88,7 +89,7 @@
   .mobile-header {
     background-color: var(--header-bg);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 80px;
     padding: 0 16px;

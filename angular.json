@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "swaranya-clinic": {
+        "snugglytots": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -23,7 +23,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/swaranya-clinic",
+                        "outputPath": "dist/snugglytots",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": [
@@ -73,10 +73,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "browserTarget": "swaranya-clinic:build:production"
+                            "browserTarget": "snugglytots:build:production"
                         },
                         "development": {
-                            "browserTarget": "swaranya-clinic:build:development"
+                            "browserTarget": "snugglytots:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "swaranya-clinic:build"
+                        "browserTarget": "snugglytots:build"
                     }
                 },
                 "test": {

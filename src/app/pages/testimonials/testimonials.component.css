@@ -50,6 +50,7 @@
   height: auto;
   position: absolute;
   top: -64px;
+  border-radius: 20px;
 }
 
 .testimonial_row {

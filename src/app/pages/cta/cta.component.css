@@ -1,6 +1,6 @@
 /* Enhanced Banner Styling with Animations */
 .banner {
-  padding: 90px 0px;
+  padding: 40px 0px;
   background-image: url(../../../assets/images/cta.jpg);
   background-repeat: no-repeat;
   display: flex;
@@ -11,6 +11,12 @@
   animation: fadeIn 1.5s ease-in-out;
   border-radius: 20px;
   /* opacity: 0.7; */
+  margin-top: 50px;
+}
+
+.button_list {
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes fadeIn {
@@ -121,8 +127,7 @@
     letter-spacing: 0px !important;
   }
   .banner {
-    padding: 100px 12px 80px 12px !important;
-    height: 100vh !important;
+    padding: 40px 12px 40px 12px !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
