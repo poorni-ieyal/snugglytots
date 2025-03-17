@@ -63,12 +63,12 @@ export class CollectionsComponent {
   };
 
   meetups: Array<string> = [
-    '../../../assets/images/collection8.png',
-    '../../../assets/images/collection9.png',
-    '../../../assets/images/collection10.png',
-    // '../../../assets/images/collection4.png',
-    // '../../../assets/images/collection5.png',
-    // '../../../assets/images/collection6.png',
-    // '../../../assets/images/collection7.png',
+    '../../../assets/images/BAMBOO - SPANDEX.png',
+    '../../../assets/images/LUXE SLEEP SET WEBSITE.png',
+    '../../../assets/images/BAMBOO SPANDEX.png',
+    '../../../assets/images/SNUGGLY AVIATOR ROMPER WEBSITE.png',
+    '../../../assets/images/TENCEL WOOL SPANDEX .png',
+    '../../../assets/images/UNICORN WEBSITE.png',
+    '../../../assets/images/SNUGGLYSHIELD WEBSITE.jpg',
   ];
 }

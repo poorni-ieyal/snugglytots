@@ -12,14 +12,15 @@ export class SpecialComponent {
   specials: any = [
     {
       icon: '../../../assets/images/icons/Eco Friendly fabric.svg',
-      heading: 'Eczema-Friendly Fabrics',
-      subheading: 'Hypoallergenic, soft & breathable.',
+      heading: 'Eczema Friendly Fabrics',
+      subheading: 'Tencel, Bamboo and Wool.',
       alt: 'Eczema-Friendly Fabrics',
     },
     {
       icon: '../../../assets/images/icons/Soft SKin.svg',
       heading: 'Designed for Sensitive Skin',
-      subheading: 'Hypoallergenic, soft & breathable.',
+      subheading:
+        'Seamless Flatlock Stitching, Tag-Free Designs,Silky-Smooth Texture.',
       alt: 'No harsh chemicals, no irritants.',
     },
     {
@@ -32,7 +33,7 @@ export class SpecialComponent {
       icon: '../../../assets/images/icons/Parent Approved.svg',
       heading: 'Parent-Approved',
       subheading:
-        'Created by a mom who understands the struggles of baby eczema.',
+        'Created by a parent who understands the struggles of baby eczema.',
       alt: 'Parent-Approved',
     },
   ];

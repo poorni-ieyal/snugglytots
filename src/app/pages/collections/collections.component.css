@@ -58,3 +58,9 @@
     line-height: 35px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .image img {
+    max-width: 100%;
+  }
+}

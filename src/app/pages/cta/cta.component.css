@@ -1,7 +1,7 @@
 /* Enhanced Banner Styling with Animations */
 .banner {
   padding: 40px 0px;
-  background-image: url(../../../assets/images/cta.jpg);
+  background-image: url(../../../assets/images/cta-background.png);
   background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;
@@ -12,6 +12,16 @@
   border-radius: 20px;
   /* opacity: 0.7; */
   margin-top: 50px;
+}
+
+.button_list a {
+  text-decoration: none;
+}
+
+.image img {
+  max-width: 100%;
+  border-radius: 15px;
+  /* padding-left: 20px; */
 }
 
 .button_list {
@@ -140,5 +150,24 @@
   .heading h3,
   .heading h2 {
     color: var(--primaryColor);
+  }
+  .image img {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner {
+    background-position: top;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .image {
+    display: flex;
+    justify-content: center;
+  }
+  .image img {
+    margin-bottom: 20px;
   }
 }

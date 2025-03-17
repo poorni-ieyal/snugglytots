@@ -51,6 +51,7 @@ span {
 .banner-img {
   width: 100%;
   margin-top: 30px;
+  border-radius: 30px;
 }
 
 @keyframes slideIn {
@@ -190,6 +191,7 @@ span {
   }
   .banner-img {
     margin-bottom: 20px;
+    border-radius: 30px;
   }
   .heading h3 {
     font-size: 39px !important;
@@ -205,5 +207,12 @@ span {
   }
   .mobile-header {
     justify-content: center !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .banner-img {
+    border-radius: 30px;
+    margin-bottom: 20px;
   }
 }
