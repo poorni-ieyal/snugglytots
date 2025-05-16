@@ -1,0 +1,18 @@
+<div class="modal-overlay" *ngIf="isOpen">
+    <div class="newsletter-modal">
+        <button class="close-btn" (click)="close()">✖</button>
+        <h2 class="title">Subscribe to Our Newsletter</h2>
+        <form (ngSubmit)="sendToWhatsApp()" #newsletterForm="ngForm">
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" name="name" [(ngModel)]="name" required />
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" name="email" [(ngModel)]="email" required />
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your Message" name="message" [(ngModel)]="message"></textarea>
+            </div>
+            <button type="submit" [disabled]="!newsletterForm.form.valid">Send to WhatsApp</button>
+        </form>
+    </div>
+</div>
